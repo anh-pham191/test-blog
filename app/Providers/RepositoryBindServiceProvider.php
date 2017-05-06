@@ -76,6 +76,11 @@ class RepositoryBindServiceProvider extends ServiceProvider
             \App\Repositories\Eloquent\AdminUserNotificationRepository::class
         );
 
+        $this->app->singleton(
+            \App\Repositories\BlogRepositoryInterface::class,
+            \App\Repositories\Eloquent\BlogRepository::class
+        );
+
         /* NEW BINDING */
     }
 }
