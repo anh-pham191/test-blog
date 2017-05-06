@@ -157,5 +157,11 @@ class BlogController extends Controller
             'data' => $blogs
         ]);
     }
+    
+    public function storeBlog(BlogRequest $request){
+        return Response::json([
+            'data' => $this->blogRepository->create($request->all())
+        ]);
+    }
 
 }
