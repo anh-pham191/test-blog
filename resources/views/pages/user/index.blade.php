@@ -45,10 +45,19 @@
 @stop
 
 @section('content')
-<div class="container">
-    <p class="content">
-        <div class="title">Laravel Boilerplate</div>
-        <p><a href="https://github.com/takaaki-mizuno/laravel-boilerplate/">GitHub</a></p>
+
+
+        <!-- !PAGE CONTENT! -->
+<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
+
+    <!-- First Photo Grid-->
+    <div class="w3-row-padding w3-padding-16 w3-center" id="food">
+        @foreach($blogs as $blog)
+            <div class="w3-quarter">
+                <h3>{!! $blog->title !!}</h3>
+                <p>{!! $blog->body !!}</p>
+            </div>
+        @endforeach
     </div>
 </div>
 @stop
