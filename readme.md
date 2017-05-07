@@ -1,46 +1,19 @@
-# Laravel Boilerplate
+# Test Blog
 
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/takaaki-mizuno/laravel-boilerplate/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/takaaki-mizuno/laravel-boilerplate/?branch=master)
-
-[![CircleCI](https://circleci.com/gh/takaaki-mizuno/laravel-boilerplate.svg?style=svg)](https://circleci.com/gh/takaaki-mizuno/laravel-boilerplate)
-
-This is starter application template for Laravel.
+This is my test blog for Figured.
 Any suggestions, feedback, or push requests are really welcome.
 
-## How To Start Your Project
+## Finished
 
-First, you can clone this repository.
+- Building admin panel.
 
-`git clone git@github.com:takaaki-mizuno/laravel-boilerplate.git`
+- CRUD for ARTICLE.
 
-Then, change the directory name to your own project name.
+- Use Repository pattern.
 
-`mv laravel-boilerplate [your-own-project-name]`
+## Unfinished
 
-Create your own repository on GitHub.And you can change origin url to your own remote repository and push it.
 
-`git remote set-url origin [your-git-url]`
-`git push -u origin master`
+- Single page application CRUD for BLOG with AngularJS v1.
 
-And after that, you can add this boilerplate remote repository as another remote url.
-
-`git remote add boilerplate git@github.com:takaaki-mizuno/laravel-boilerplate.git`
-
-With that, you can get update of boiler plate with `git pull boilerplate master` command.
-
-## Use Generators
-
-On this boilerplate, I added many generators
-
-Use `make:new-model` instead of `make:model` and use `make:repository`, `make:service`,`make:helper` to create repositories, services, helpers.
-And `make:admin-crud` to create admin crud.
-
-The process for setting up the base structure will be following.
-
-1. You can create migration with `make:migration` and create the tables
-2. Create model with `make:new-model`
-3. Create repository with `make:repository`
-4. Create Admin CRUD with `make:admin-crud`
-5. Create services and helpers with `make:service` and `make:helper` if needed.
-
-These generators create test code also. You need to add more tests on these files.
+- Deploy on ec2 instance ( with nginx, mysql on centOS ).
