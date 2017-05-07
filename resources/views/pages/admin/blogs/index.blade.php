@@ -37,12 +37,10 @@
                 <tr>
                     <th style="width: 10px">ID</th>
                     <th>@lang('admin.pages.blogs.columns.title')</th>
-                    <th>@lang('admin.pages.blogs.columns.main_image')</th>
                 </tr>
                 <tr ng-repeat="blog in blogs">
                     <td><% blog.id %></td>
                     <td><% blog.title %></td>
-                    <td><% blog.main_image %></td>
                     <td>
                         <button class="btn btn-block btn-primary btn-sm">@lang('admin.pages.common.buttons.edit')</button>
                         {{--<a href="#" class="btn btn-block btn-danger btn-sm delete-button" data-delete-url="{!! action('Admin\BlogController@destroy', $model->id) !!}">@lang('admin.pages.common.buttons.delete')</a>--}}
@@ -72,15 +70,6 @@
                                     <div class="form-group">
                                         <label for="title">@lang('admin.pages.blogs.columns.title')</label>
                                         <input type="text" class="form-control" ng-model="blog.title" id="title" name="title">
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <label for="main_image">@lang('admin.pages.blogs.columns.main_image')</label>
-                                        <input type="file" class="form-control" ng-model="blog.main_image" id="main_image" name="main_image">
                                     </div>
                                 </div>
                             </div>
