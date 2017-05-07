@@ -146,6 +146,15 @@ return [
                 'password' => 'Password',
             ],
         ],
+        'blogs'   => [
+            'columns'  => [
+                'admin_id' => 'Admin_id',
+                'title' => 'Title',
+                'main_image' => 'Main_image',
+                'body' => 'Body',
+                'summary' => 'Summary',
+            ],
+        ],
         /* NEW PAGE STRINGS */
     ],
     'roles'    => [

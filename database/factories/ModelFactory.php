@@ -112,4 +112,15 @@ $factory->define(App\Models\AdminUserNotification::class, function(Faker\Generat
     ];
 });
 
+$factory->define(App\Models\Blog::class, function (Faker\Generator $faker) {
+    return [
+        'id' => '',
+        'admin_id' => 0,
+        'title' => '',
+        'main_image' => '',
+        'body' => '',
+        'summary' => '',
+    ];
+});
+
 /* NEW MODEL FACTORY */

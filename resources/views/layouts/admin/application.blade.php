@@ -9,6 +9,8 @@
     @include('layouts.admin.styles')
     @yield('styles')
     <meta name="csrf-token" content="{!! csrf_token() !!}">
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="{!! \URLHelper::asset('js/app.js', 'admin') !!}"></script>
 </head>
 <body class="{!! isset($bodyClasses) ? $bodyClasses : 'hold-transition skin-blue sidebar-mini' !!}">
 @if( isset($noFrame) && $noFrame == true )
